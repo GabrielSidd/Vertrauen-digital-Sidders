@@ -10,6 +10,7 @@
     --secundaria: #2B3D41;
     --terciario: #F8F4E3;
     --cuaternario: #087E8B;
+    --grad-bg: linear-gradient(to left, #087e8b, #1c717d, #24646f, #295861, #2b4c53, #29444c, #263c44, #24343c, #202d37, #1e2632, #1c1f2c, #1b1825);
     --font-primary: "Maven pro";
     --font_secundary: "Bebas Neue";
     --text_lg: 2em;
@@ -30,7 +31,7 @@
 html {
     font-size: 62.5%;
     font-family: var(--font-primary);
-    color: var(--secundaria);
+    background: var(--grad-bg);
 }
 
 body {
@@ -73,8 +74,7 @@ body {
 
 /* HEADER */
 header {
-    background-color: var(--secundaria);
-    position: fixed;
+    background-color: var(--grad-bg);
     width: 100%;
 }
 
@@ -121,8 +121,10 @@ section :first-of-type {
 main {
     display: grid;
     min-height: 100vh;
+    font-family: var(--font_primary);
+    color: var(--terciario);
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: .6fr .6fr .6fr;
     grid-template-areas:
         "S1   S1"
         "S2   S2"
@@ -150,15 +152,14 @@ main {
 .S1__parrafo h1 {
     font-size: 6.5em;
     text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: var(--cuaternario);
+    font-weight: bold;
     flex-basis: 50%;
     font-size: 2em
 }
 
 .S1__parrafo p {
     line-height: 1.5;
+    font-style:inherit;
     margin-top: 10vh;
     flex-basis: 50%;
     font-size: 2em
@@ -174,8 +175,6 @@ main {
     padding: 1rem;
     font-size: 2em;
     font-weight: bold;
-    background-color: var(--secundaria);
-    border-color: #087E8B;
     color: var(--terciario);
     border: 2px solid var(--cuaternario);
     border-style: ridge;
@@ -201,9 +200,7 @@ main {
 .S2__parrafo h2 {
     font-size: 6.5em;
     text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: var(--cuaternario);
+    font-weight: bold;
     flex-basis: 50%;
     font-size: 2em
 }
@@ -241,9 +238,7 @@ main {
 .S3__parrafo h2 {
     font-size: 6.5em;
     text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: var(--cuaternario);
+    font-weight: bold;
     flex-basis: 50%;
     font-size: 2em
 }
@@ -281,11 +276,11 @@ main {
 }
 
 .S4__parrafo h2 {
-    font-size: 2em;
+    font-size: 6.5em;
     text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: var(--cuaternario);
+    font-weight: bold;
+    flex-basis: 50%;
+    font-size: 2em
 
 }
 
@@ -311,7 +306,7 @@ main {
     padding: 0 2rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "img  t"
+    grid-template-areas: "img t"
 
 }
 
@@ -322,9 +317,7 @@ main {
 .S5__parrafo h2 {
     font-size: 6.5em;
     text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: var(--cuaternario);
+    font-weight: bold;
     flex-basis: 50%;
     font-size: 2em
 }
@@ -352,7 +345,7 @@ main {
     padding: 0 2rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "t   img"
+    grid-template-areas: "t img"
 }
 
 .S6__parrafo {
@@ -360,11 +353,9 @@ main {
 }
 
 .S6__parrafo h2 {
-    font-size: 4.5em;
+    font-size: 6.5em;
     text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: var(--cuaternario);
+    font-weight: bold;
     flex-basis: 50%;
     font-size: 2em
 }
@@ -403,9 +394,8 @@ main {
 .S7__parrafo h2 {
     font-size: 6.5em;
     text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: var(--cuaternario);
+    font-weight: bold;
+    flex-basis: 50%;
     font-size: 2em
 }
 
@@ -442,9 +432,8 @@ main {
 .S8__parrafo h2 {
     font-size: 6.5em;
     text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: var(--cuaternario);
+    font-weight: bold;
+    flex-basis: 50%;
     font-size: 2em
 }
 
@@ -481,9 +470,8 @@ main {
 .S9__parrafo h2 {
     font-size: 6.5em;
     text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: var(--cuaternario);
+    font-weight: bold;
+    flex-basis: 50%;
     font-size: 2em
 }
 
@@ -518,9 +506,8 @@ main {
 .S10__parrafo h2 {
     font-size: 6.5em;
     text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: var(--cuaternario);
+    font-weight: bold;
+    flex-basis: 50%;
     font-size: 2em
 }
 
@@ -534,16 +521,26 @@ main {
 .S11 {
     grid-area: S2;
     display: grid;
+    align-items:center;
+    padding: 2rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin-top: 5vh;
+    justify-content: center;
+    align-content: center;
+    
 }
 
 .S12 {
     grid-area: S3;
     display: grid;
+    align-items:center;
+    padding: 2rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    margin-top: 5vh;
+    justify-content: center;
+    align-content: center;
 }
 
 
@@ -566,9 +563,8 @@ main {
 .S13__parrafo h2 {
     font-size: 6.5em;
     text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: var(--cuaternario);
+    font-weight: bold;
+    flex-basis: 50%;
     font-size: 2em
 }
 
@@ -611,7 +607,7 @@ main {
     font-weight: bold;
     background-color: var(--primaria);
     border-color: #087E8B;
-    color: black;
+    color: var(--terciario);
     border: 2px solid var(--cuaternario);
     border-style: ridge;
     margin-top: 6vh;
@@ -734,7 +730,7 @@ footer {
     height: 10vh;
     align-items: center;
     justify-content: center;
-    background-color: var(--secundaria);
+    background-color: var(--grad-bg);
     color: #FFFFFF;
     margin-top: 15vh;
 }
