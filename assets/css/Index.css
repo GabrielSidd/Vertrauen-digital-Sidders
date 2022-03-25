@@ -87,14 +87,14 @@ header .navbar {
 }
 
 header .logo {
-    flex-basis: 30%;
+    flex-basis: 50%;
     justify-content: space-between;
     display: inline-block;
     width: 5px;
 }
 
 header .menu {
-    flex-basis: 40%;
+    flex-basis: 50%;
     justify-content: space-between;
 }
 
@@ -526,7 +526,7 @@ main {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin-top: 5vh;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     
 }
