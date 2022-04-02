@@ -1,0 +1,20 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
+/* MISCELANIOS */
+@import "./misc/variables";
+@import "./misc/normalize";
+@import "./misc/mixins";
+@import "./misc/animations";
+
+/*PARTIALS*/
+@import "./partials/header";
+@import "./partials/footer";
+
+/*VIEWS*/
+@import "./views/home";
+@import "./views/about";
+@import "./views/contact";
+@import "./views/service";
+@import "./views/clients";

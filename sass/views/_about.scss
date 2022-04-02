@@ -1,0 +1,126 @@
+.S4 {
+    grid-area: S1;
+    display: grid;
+    margin-top: 30vh;
+    gap: 2rem;
+    align-items: center;
+    padding: 0 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "T  img"
+
+}
+
+.S4__parrafo {
+    grid-area: T;
+    flex-basis: 50%;
+}
+
+.S4__parrafo h2 {
+    font-size: 6.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    flex-basis: 50%;
+    font-size: 2em
+}
+
+.S4__parrafo p {
+    font-size: 2em;
+    line-height: 1.5;
+    margin-top: 10vh;
+}
+
+.S4__picture {
+    grid-area: img;
+    align-items: center;
+    min-width: 320px;
+    flex-basis: 50%;
+}
+
+.S5 {
+    grid-area: S2;
+    display: grid;
+    margin-top: 5vh;
+    gap: 2rem;
+    align-items: center;
+    padding: 0 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "img t"
+
+}
+
+.S5__parrafo {
+    grid-area: t;
+}
+
+.S5__parrafo h2 {
+    font-size: 6.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    flex-basis: 50%;
+    font-size: 2em
+}
+
+.S5__parrafo p {
+    font-size: 4.5em;
+    line-height: 1.5;
+    margin-top: 10vh;
+    flex-basis: 50%;
+    font-size: 2em
+}
+
+.S5__picture {
+    grid-area: img;
+    flex-basis: 50%;
+    min-width: 320px;
+}
+
+.S6 {
+    grid-area: S3;
+    display: grid;
+    margin-top: 5vh;
+    gap: 2rem;
+    align-items: center;
+    padding: 0 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "t img"
+}
+
+.S6__parrafo {
+    grid-area: t;
+}
+
+.S6__parrafo h2 {
+    font-size: 6.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    flex-basis: 50%;
+    font-size: 2em
+}
+
+.S6__parrafo p {
+    font-size: 4.5em;
+    line-height: 1.5;
+    margin-top: 10vh;
+    flex-basis: 50%;
+    font-size: 2em
+}
+
+.S6__picture {
+    grid-area: img;
+    flex-basis: 50%;
+    min-width: 320px;
+}
+.S4__img4 {
+    width: 100%;
+}
+
+.S5__img5 {
+    width: 100%;
+}
+
+.S6__img6 {
+    width: 100%;
+}

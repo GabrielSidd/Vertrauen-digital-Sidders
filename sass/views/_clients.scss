@@ -1,0 +1,65 @@
+.S10 {
+    grid-area: S1;
+    display: grid;
+    margin-top: 30vh;
+    gap: 2rem;
+    padding: 0 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "T"
+}
+
+.S10__parrafo {
+    grid-area: T;
+}
+
+.S10__parrafo h2 {
+    font-size: 6.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    flex-basis: 50%;
+    font-size: 2em
+}
+
+.S10__parrafo p {
+    font-size: 4.5em;
+    line-height: 1.5;
+    margin-top: 5vh;
+    font-size: 2em
+}
+
+.S11 {
+    grid-area: S2;
+    display: grid;
+    align-items: center;
+    padding: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 5vh;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.S12 {
+    grid-area: S3;
+    display: grid;
+    align-items: center;
+    padding: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 5vh;
+    justify-content: center;
+    align-content: center;
+}
+.S11__img10 {
+    width: 100%;
+}
+
+.S11__im11 {
+    width: 100%;
+}
+
+.S11__img12 {
+    width: 100%;
+}
