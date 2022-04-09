@@ -12,3 +12,6 @@
     margin: 0 auto;
 }
 
+@mixin tamaño-img () {
+    max-width: 100%;
+}

@@ -157,7 +157,7 @@ main {
     flex-basis: 50%;
     min-width: 320px; }
   .S1__img1 {
-    width: 100%; }
+    max-width: 100%; }
 
 .S2 {
   grid-area: S2;
@@ -226,10 +226,10 @@ main {
   min-width: 320px; }
 
 .S2__img2 {
-  width: 100%; }
+  max-width: 100%; }
 
 .S3__img3 {
-  width: 100%; }
+  max-width: 100%; }
 
 @media screen and (max-width: 768px) {
   header {
@@ -248,6 +248,18 @@ main {
   .presentation__description {
     flex-grow: 1;
     order: -1; } }
+
+section :first-of-type {
+  padding-top: 1vh; }
+
+main {
+  display: grid;
+  min-height: 100vh;
+  font-family: "Maven pro";
+  color: #F8F4E3;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: .6fr .6fr .6fr;
+  grid-template-areas: "S1   S1" "S2   S2" "S3   S3"; }
 
 .S4 {
   grid-area: S1;
@@ -349,13 +361,25 @@ main {
   min-width: 320px; }
 
 .S4__img4 {
-  width: 100%; }
+  max-width: 100%; }
 
 .S5__img5 {
-  width: 100%; }
+  max-width: 100%; }
 
 .S6__img6 {
-  width: 100%; }
+  max-width: 100%; }
+
+section :first-of-type {
+  padding-top: 1vh; }
+
+main {
+  display: grid;
+  min-height: 100vh;
+  font-family: "Maven pro";
+  color: #F8F4E3;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: .6fr .6fr .6fr;
+  grid-template-areas: "S1   S1" "S2   S2" "S3   S3"; }
 
 .S13 {
   grid-area: S1;
@@ -427,6 +451,18 @@ main {
   border: 2px solid #087E8B;
   border-style: ridge;
   margin-top: 6vh; }
+
+section :first-of-type {
+  padding-top: 1vh; }
+
+main {
+  display: grid;
+  min-height: 100vh;
+  font-family: "Maven pro";
+  color: #F8F4E3;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: .6fr .6fr .6fr;
+  grid-template-areas: "S1   S1" "S2   S2" "S3   S3"; }
 
 .S7 {
   grid-area: S1;
@@ -528,13 +564,25 @@ main {
   min-width: 320px; }
 
 .S7__img7 {
-  width: 100%; }
+  max-width: 100%; }
 
 .S8__img8 {
-  width: 100%; }
+  max-width: 100%; }
 
 .S9__img9 {
-  width: 100%; }
+  max-width: 100%; }
+
+section :first-of-type {
+  padding-top: 1vh; }
+
+main {
+  display: grid;
+  min-height: 100vh;
+  font-family: "Maven pro";
+  color: #F8F4E3;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: .6fr .6fr .6fr;
+  grid-template-areas: "S1   S1" "S2   S2" "S3   S3"; }
 
 .S10 {
   grid-area: S1;
@@ -585,10 +633,10 @@ main {
   align-content: center; }
 
 .S11__img10 {
-  width: 100%; }
+  max-width: 100%; }
 
 .S11__im11 {
-  width: 100%; }
+  max-width: 100%; }
 
 .S11__img12 {
-  width: 100%; }
+  max-width: 100%; }

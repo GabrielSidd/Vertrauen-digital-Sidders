@@ -20,7 +20,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: $terciario;
+    color: map-get($colores , terciario );
     display: inline-block;
 }
 .carousel {
@@ -44,7 +44,7 @@ a {
     position: inherit;
 }
 form {
-    font-family: $secundaria;
+    font-family: map-get($colores , secundaria );
     font-size: 2rem;
     display: flex;
 }

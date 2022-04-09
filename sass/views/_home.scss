@@ -6,7 +6,7 @@ main {
     display: grid;
     min-height: 100vh;
     font-family: $font-primary;
-    color: $terciario;
+    color: map-get($colores , terciario );
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: .6fr .6fr .6fr;
     grid-template-areas:
@@ -51,7 +51,7 @@ main {
         min-width: 320px; 
     }
     &__img1 {
-            width: 100%;
+        @include tamaño-img ();
         }
 }
 
@@ -133,11 +133,11 @@ main {
 
 
 .S2__img2 {
-    width: 100%;
+    @include tamaño-img ();
 }
 
 .S3__img3 {
-    width: 100%;
+    @include tamaño-img ();
 }
 
 @media screen and (max-width: 768px) {

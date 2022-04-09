@@ -1,3 +1,20 @@
+section :first-of-type {
+    padding-top: 1vh;
+}
+
+main {
+    display: grid;
+    min-height: 100vh;
+    font-family: $font-primary;
+    color: map-get($colores , terciario );
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: .6fr .6fr .6fr;
+    grid-template-areas:
+        "S1   S1"
+        "S2   S2"
+        "S3   S3"
+}
+
 .S13 {
     grid-area: S1;
     display: grid;
@@ -44,10 +61,10 @@
     padding: 1rem;
     font-size: 2em;
     font-weight: bold;
-    background-color: $secundaria;
+    background-color: map-get($colores , secundaria );
     border-color: #087E8B;
-    color: $terciario;
-    border: 2px solid $cuaternario;
+    color: map-get($colores , terciario );
+    border: 2px solid map-get($colores , cuaternario );
     border-style: ridge;
     margin-top: 1vh;
 }
@@ -57,10 +74,10 @@
     padding: 1rem;
     font-size: 2em;
     font-weight: bold;
-    background-color: $principal;
+    background-color: map-get($colores , principal );
     border-color: #087E8B;
-    color: $terciario;
-    border: 2px solid $cuaternario;
+    color: map-get($colores , terciario );
+    border: 2px solid map-get($colores , cuaternario );
     border-style: ridge;
     margin-top: 6vh;
 }
@@ -69,10 +86,10 @@
     padding: 1rem;
     font-size: 2em;
     font-weight: bold;
-    background-color: $secundaria;
+    background-color: map-get($colores , secundaria );
     border-color: #087E8B;
-    color: $terciario;
-    border: 2px solid $cuaternario;
+    color: map-get($colores , terciario );
+    border: 2px solid map-get($colores , cuaternario );
     border-style: ridge;
     margin-top: 6vh;
 }

@@ -1,3 +1,20 @@
+section :first-of-type {
+    padding-top: 1vh;
+}
+
+main {
+    display: grid;
+    min-height: 100vh;
+    font-family: $font-primary;
+    color: map-get($colores , terciario );
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: .6fr .6fr .6fr;
+    grid-template-areas:
+        "S1   S1"
+        "S2   S2"
+        "S3   S3"
+}
+
 .S7 {
     grid-area: S1;
     display: grid;
@@ -112,13 +129,13 @@
     min-width: 320px;
 }
 .S7__img7 {
-    width: 100%;
+    @include tamaño-img ();
 }
 
 .S8__img8 {
-    width: 100%;
+    @include tamaño-img ();
 }
 
 .S9__img9 {
-    width: 100%;
+    @include tamaño-img ();
 }

@@ -30,7 +30,7 @@ button {
     padding: 0.55rem 0.75rem;
     font-size: 1.75rem;
     line-height: 1;
-    background-color: $cuaternario;
+    background-color: map-get($colores , cuaternario );
     border: 1px solid;
     border-radius: 0.25rem;
     transition: box-shadow .15s ease-in-out;
@@ -39,7 +39,7 @@ button {
     font-family: $font_secundary;
 
     .nav-link {
-        color: $terciario !important;
+        color: map-get($colores , terciario ) !important;
         font-size: 1.8em !important;
  
     }
