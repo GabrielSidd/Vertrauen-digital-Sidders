@@ -1,142 +1,237 @@
-section :first-of-type {
-    padding-top: 1vh;
-}
-
-main {
-    display: grid;
-    min-height: 100vh;
-    font-family: $font-primary;
-    color: map-get($colores , terciario );
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: .6fr .6fr .6fr;
-    grid-template-areas:
-        "S1   S1"
-        "S2   S2"
-        "S3   S3"
-}
 .S4 {
     grid-area: S1;
     display: grid;
-    margin-top: 30vh;
+    margin-top: 20vh;
     gap: 2rem;
     align-items: center;
     padding: 0 2rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "T  img"
+    grid-template-areas: "T  img";
 
-}
+    &__parrafo {
+        grid-area: T;
+        flex-basis: 50%;
 
-.S4__parrafo {
-    grid-area: T;
-    flex-basis: 50%;
-}
+        h2 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            font-weight: bold;
+            flex-basis: 50%;
+        }
 
-.S4__parrafo h2 {
-    font-size: 6.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    flex-basis: 50%;
-    font-size: 2em
-}
+        p {
+            font-size: 1.8em;
+            line-height: 1.5;
+            margin-top: 10vh;
+        }
+    }
 
-.S4__parrafo p {
-    font-size: 2em;
-    line-height: 1.5;
-    margin-top: 10vh;
-}
+    &__picture {
+        grid-area: img;
+        min-width: 320px;
+        flex-basis: 50%;
 
-.S4__picture {
-    grid-area: img;
-    align-items: center;
-    min-width: 320px;
-    flex-basis: 50%;
+        img {
+            @include tamaño-img ();
+        }
+    }
 }
 
 .S5 {
     grid-area: S2;
     display: grid;
-    margin-top: 5vh;
+    margin-top: 15vh;
     gap: 2rem;
     align-items: center;
     padding: 0 2rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "img t"
+    grid-template-areas: "IMG    T";
 
-}
+    &__parrafo {
+        grid-area: T;
+    }
 
-.S5__parrafo {
-    grid-area: t;
-}
+    h3 {
+        font-size: 2.5em;
+        text-transform: uppercase;
+        font-weight: bold;
+        flex-basis: 50%;
+    }
 
-.S5__parrafo h2 {
-    font-size: 6.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    flex-basis: 50%;
-    font-size: 2em
-}
+    p {
+        font-size: 1.8em;
+        line-height: 1.5;
+        margin-top: 10vh;
+        flex-basis: 50%;
+    }
 
-.S5__parrafo p {
-    font-size: 4.5em;
-    line-height: 1.5;
-    margin-top: 10vh;
-    flex-basis: 50%;
-    font-size: 2em
-}
+    &__picture {
+        grid-area: IMG;
+        flex-basis: 50%;
+        min-width: 320px;
 
-.S5__picture {
-    grid-area: img;
-    flex-basis: 50%;
-    min-width: 320px;
+        img {
+            @include tamaño-img ();
+        }
+    }
 }
 
 .S6 {
     grid-area: S3;
     display: grid;
-    margin-top: 5vh;
+    margin-top: 15vh;
     gap: 2rem;
     align-items: center;
     padding: 0 2rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "t img"
+    grid-template-areas: "T    IMG";
+
+    &__parrafo {
+        grid-area: T;
+    }
+
+    h3 {
+        font-size: 2.5em;
+        text-transform: uppercase;
+        font-weight: bold;
+        flex-basis: 50%;
+    }
+
+    p {
+        font-size: 1.8em;
+        line-height: 1.5;
+        margin-top: 10vh;
+        flex-basis: 50%;
+    }
+
+    &__picture {
+        grid-area: IMG;
+        flex-basis: 50%;
+        min-width: 320px;
+
+        img {
+            @include tamaño-img ();
+        }
+    }
 }
 
-.S6__parrafo {
-    grid-area: t;
+@media only screen and (max-width: 1024px) {
+    .navbar-brand {
+        width: 10rem;
+    }
+
+    .navbar .nav-item a {
+        font-size: 0.8em;
+        width: 7rem;
+        text-align: center;
+    }
+
+    .S4,
+    h1,
+    .S4__parrafo,
+    p,
+    .S4__container .S4__picture,
+    .S4__img4,
+    .S5__container .S5__picture,
+    .S5__img5,
+    .S5__parrafo,
+    .S6__container .S6__picture,
+    .S6__img6,
+    .S6__parrafo {
+        font-size: 1em;
+    }
 }
 
-.S6__parrafo h2 {
-    font-size: 6.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    flex-basis: 50%;
-    font-size: 2em
+@media only screen and (max-width: 900px) {
+    .navbar-brand {
+        width: 10rem;
+    }
+
+    .navbar .nav-item a {
+        font-size: 1.8em;
+    }
+
+    .S4,
+    h1,
+    .S4__parrafo,
+    p,
+    .S4__container .S4__picture,
+    .S4__img4,
+    .S5__container .S5__picture,
+    .S5__img5,
+    .S5__parrafo,
+    .S6__container .S6__picture,
+    .S6__img6,
+    .S6__parrafo {
+        font-size: 1em;
+    }
 }
 
-.S6__parrafo p {
-    font-size: 4.5em;
-    line-height: 1.5;
-    margin-top: 10vh;
-    flex-basis: 50%;
-    font-size: 2em
-}
+@media only screen and (max-width: 768px) {
+    main {
+        display: grid;
+        min-height: 100vh;
+        font-family: $font-primary;
+        color: map-get($colores, terciario);
+        grid-template-columns: 1fr;
+        grid-template-rows: .1fr .1fr .1fr;
+        grid-template-areas:
+            "S1"
+            "S2"
+            "S3"
+    }
 
-.S6__picture {
-    grid-area: img;
-    flex-basis: 50%;
-    min-width: 320px;
-}
-.S4__img4 {
-    @include tamaño-img ();
-}
+    .S4 {
+        margin-top: 15vh;
+        grid-area: S1;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "T"
+            "IMG";
 
-.S5__img5 {
-    @include tamaño-img ();
-}
+        &__parrafo {
+            grid-area: T;
+        }
 
-.S6__img6 {
-    @include tamaño-img ();
+        &__picture {
+            grid-area: IMG;
+        }
+    }
+
+    .S5 {
+        grid-area: S2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "T"
+            "IMG";
+
+        &__parrafo {
+            grid-area: T;
+        }
+
+        &__picture {
+            grid-area: IMG;
+        }
+    }
+
+    .S6 {
+        grid-area: S3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "T"
+            "IMG";
+
+        &__parrafo {
+            grid-area: T;
+        }
+
+        &__picture {
+            grid-area: IMG;
+        }
+    }
 }

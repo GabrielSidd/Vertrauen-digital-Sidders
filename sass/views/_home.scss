@@ -1,22 +1,5 @@
-section :first-of-type {
-    padding-top: 1vh;
-}
-
-main {
-    display: grid;
-    min-height: 100vh;
-    font-family: $font-primary;
-    color: map-get($colores , terciario );
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: .6fr .6fr .6fr;
-    grid-template-areas:
-        "S1   S1"
-        "S2   S2"
-        "S3   S3"
-}
-
 .S1 {
-    margin-top: 30vh;
+    margin-top: 20vh;
     grid-area: S1;
     display: grid;
     gap: 2rem;
@@ -29,131 +12,237 @@ main {
     &__parrafo {
         grid-area: T;
     }
-        h1 {
-        font-size: 6.5em;
+
+    h1 {
+        font-size: 2.5em;
         text-transform: uppercase;
         font-weight: bold;
         flex-basis: 50%;
-        font-size: 2em
     }
-        p {
+
+    p {
         line-height: 1.5;
         font-style: inherit;
         margin-top: 10vh;
         flex-basis: 50%;
-        font-size: 2em
+        font-size: 1.8em;
     }
-    
+
+    nav a {
+        border-style: groove;
+        border-color: map-get($colores, terciario);
+        padding: 0.6em;
+        color: map-get($colores, terciario);
+        font-family: $font_secundary;
+        margin-top: 5vh;
+        font-size: 2.5em;
+    }
 
     &__picture {
         grid-area: IMG;
         flex-basis: 50%;
-        min-width: 320px; 
-    }
-    &__img1 {
-        @include tamaño-img ();
+        min-width: 320px;
+
+        img {
+            @include tamaño-img ();
         }
+    }
 }
 
 .S2 {
     grid-area: S2;
     display: grid;
-    margin-top: 5vh;
+    margin-top: 15vh;
     gap: 2rem;
     align-items: center;
     padding: 0 2rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: "IMG    T";
-}
 
-.S2__parrafo {
-    grid-area: T;
-}
+    &__parrafo {
+        grid-area: T;
+    }
 
-.S2__parrafo h2 {
-    font-size: 6.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    flex-basis: 50%;
-    font-size: 2em
-}
+    h2 {
+        font-size: 2.5em;
+        text-transform: uppercase;
+        font-weight: bold;
+        flex-basis: 50%;
+    }
 
-.S2__parrafo p {
-    font-size: 4.5em;
-    line-height: 1.5;
-    margin-top: 10vh;
-    flex-basis: 50%;
-    font-size: 2em
-}
+    p {
+        font-size: 1.8em;
+        line-height: 1.5;
+        margin-top: 10vh;
+        flex-basis: 50%;
+    }
 
-.S2__picture {
-    grid-area: IMG;
-    flex-basis: 50%;
-    min-width: 320px;
+    &__picture {
+        grid-area: IMG;
+        flex-basis: 50%;
+        min-width: 320px;
+
+        img {
+            @include tamaño-img ();
+        }
+    }
 }
 
 .S3 {
     grid-area: S3;
     display: grid;
-    margin-top: 5vh;
+    margin-top: 15vh;
     gap: 2rem;
     align-items: center;
     padding: 0 2rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "T    IMG"
+    grid-template-areas: "T    IMG";
+
+    &__parrafo {
+        grid-area: T;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        text-transform: uppercase;
+        font-weight: bold;
+        flex-basis: 50%;
+    }
+
+    p {
+        font-size: 1.8em;
+        line-height: 1.5;
+        margin-top: 10vh;
+        flex-basis: 50%;
+    }
+
+    &__picture {
+        grid-area: IMG;
+        flex-basis: 50%;
+        min-width: 320px;
+
+        img {
+            @include tamaño-img ();
+        }
+    }
 }
 
-.S3__parrafo {
-    grid-area: T;
+@media only screen and (max-width: 1024px) {
+    .navbar-brand {
+        width: 10rem;
+    }
+
+    .navbar .nav-item a {
+        font-size: 0.8em;
+        width: 7rem;
+        text-align: center;
+    }
+
+    .S1,
+    h1,
+    .S1__parrafo,
+    p,
+    .S1__container .S1__picture,
+    .S1__img1,
+    .S2__container .S2__picture,
+    .S2__img2,
+    .S2__parrafo,
+    .S3__container .S3__picture,
+    .S3__img3,
+    .S3__parrafo {
+        font-size: 1em;
+    }
 }
 
-.S3__parrafo h2 {
-    font-size: 6.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    flex-basis: 50%;
-    font-size: 2em
+@media only screen and (max-width: 900px) {
+    .navbar-brand {
+        width: 10rem;
+    }
+
+    .navbar .nav-item a {
+        font-size: 1.8em;
+    }
+
+    .S1,
+    h1,
+    .S1__parrafo,
+    p,
+    .S1__container .S1__picture,
+    .S1__img1,
+    .S2__container .S2__picture,
+    .S2__img2,
+    .S2__parrafo,
+    .S3__container .S3__picture,
+    .S3__img3,
+    .S3__parrafo {
+        font-size: 1em;
+    }
 }
 
-.S3__parrafo p {
-    font-size: 4.5em;
-    line-height: 1.5;
-    margin-top: 10vh;
-    flex-basis: 50%;
-    font-size: 2em
+@media only screen and (max-width: 768px) {
+    main {
+        display: grid;
+        min-height: 100vh;
+        font-family: $font-primary;
+        color: map-get($colores, terciario);
+        grid-template-columns: 1fr;
+        grid-template-rows: .1fr .1fr .1fr;
+        grid-template-areas:
+            "S1"
+            "S2"
+            "S3"
+    }
+
+    .S1 {
+        margin-top: 15vh;
+        grid-area: S1;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "T"
+            "IMG";
+
+        &__parrafo {
+            grid-area: T;
+        }
+
+        &__picture {
+            grid-area: IMG;
+        }
+    }
+
+    .S2 {
+        grid-area: S2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "T"
+            "IMG";
+
+        &__parrafo {
+            grid-area: T;
+        }
+
+        &__picture {
+            grid-area: IMG;
+        }
+    }
+
+    .S3 {
+        grid-area: S3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "T"
+            "IMG";
+
+        &__parrafo {
+            grid-area: T;
+        }
+
+        &__picture {
+            grid-area: IMG;
+        }
+    }
 }
-
-.S3__picture {
-    grid-area: IMG;
-    flex-basis: 50%;
-    min-width: 320px;
-}
-
-
-.S2__img2 {
-    @include tamaño-img ();
-}
-
-.S3__img3 {
-    @include tamaño-img ();
-}
-
-@media screen and (max-width: 768px) {
-    header {
-      padding: 2em; }
-      header .navbar {
-        justify-content: center;
-        flex-direction: column; }
-      header .menu {
-        font-size: .8em; } }
-
-        @media screen and (max-width: 768px) {
-            .presentation {
-              flex-wrap: wrap; }
-              .presentation__picture {
-                flex-grow: 1; }
-              .presentation__description {
-                flex-grow: 1;
-                order: -1; } }

@@ -3,17 +3,18 @@
 header {
     background-color: $grad-bg;
 }
+
 button {
     writing-mode: horizontal-tb !important;
-    font-style:normal ;
-    font-variant-ligatures:common-ligatures ;
-    font-variant-caps:normal ;
-    font-variant-numeric:diagonal-fractions ;
-    font-variant-east-asian:full-width ;
-    font-weight:bold ;
-    font-stretch:normal;
-    font-size:medium ;
-    font-family: $font_secundary ;
+    font-style: normal;
+    font-variant-ligatures: common-ligatures;
+    font-variant-caps: normal;
+    font-variant-numeric: diagonal-fractions;
+    font-variant-east-asian: full-width;
+    font-weight: bold;
+    font-stretch: normal;
+    font-size: medium;
+    font-family: $font_secundary;
     text-rendering: auto;
     color: -internal-light-dark(red);
     letter-spacing: normal;
@@ -27,20 +28,26 @@ button {
 }
 
 .navbar-toggler {
-    padding: 0.55rem 0.75rem;
+    width: 70px;
+    height: 50px;
+    border-color: map-get($colores, terciario);
     font-size: 1.75rem;
     line-height: 1;
-    background-color: map-get($colores , cuaternario );
-    border: 1px solid;
-    border-radius: 0.25rem;
     transition: box-shadow .15s ease-in-out;
 }
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .navbar ul.navbar-nav li {
     font-family: $font_secundary;
 
     .nav-link {
-        color: map-get($colores , terciario ) !important;
+        color: map-get($colores, terciario) !important;
         font-size: 1.8em !important;
- 
     }
 }

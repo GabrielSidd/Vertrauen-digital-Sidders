@@ -1,9 +1,15 @@
 footer {
-    height: 10vh;
-    align-items: center;
-    justify-content: center;
-    background-color: $grad-bg;
-    color: #FFFFFF;
     margin-top: 30vh;
-    text-decoration-color: aliceblue;
+}
+
+svg {
+    width: 25px;
+    color: map-get($colores, terciario)
+}
+
+span {
+    flex-basis: 100%;
+    font-family: $font-primary;
+    font-size: 1em;
+    color: map-get($colores, terciario)
 }
