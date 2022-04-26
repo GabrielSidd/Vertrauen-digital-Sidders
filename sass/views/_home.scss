@@ -31,11 +31,15 @@
     nav a {
         border-style: groove;
         border-color: map-get($colores, terciario);
-        padding: 0.6em;
+        padding: 0.8em;
         color: map-get($colores, terciario);
         font-family: $font_secundary;
         margin-top: 5vh;
         font-size: 2.5em;
+    }
+    nav a:hover {
+        color: map-get($colores , cuaternario );
+        border-color: map-get($colores , cuaternario );
     }
 
     &__picture {

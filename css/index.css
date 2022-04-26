@@ -9,8 +9,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  background: linear-gradient(to left, #087e8b, #1c717d, #24646f, #295861, #2b4c53, #29444c, #263c44, #24343c, #202d37, #1e2632, #1c1f2c, #1b1825);
-  font-family: "Maven pro"; }
+  background: linear-gradient(to left, #087e8b, #1c717d, #24646f, #295861, #2b4c53, #29444c, #263c44, #24343c, #202d37, #1e2632, #1c1f2c, #1b1825); }
 
 ul {
   list-style-type: none;
@@ -129,15 +128,26 @@ button {
 footer {
   margin-top: 30vh; }
 
-svg {
-  width: 25px;
-  color: #F8F4E3; }
+.sociales {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem;
+  justify-content: space-around; }
 
-span {
-  flex-basis: 100%;
+.sociales__CR {
+  flex-basis: 50%;
   font-family: "Maven pro";
-  font-size: 1em;
-  color: #F8F4E3; }
+  color: #F8F4E3;
+  font-size: 1.2em; }
+
+.sociales__icono {
+  padding: 1rem;
+  flex-basis: 50%;
+  max-width: 100%; }
+
+.sociales__icono:hover {
+  color: #087E8B; }
 
 /*VIEWS*/
 .S1 {
@@ -166,11 +176,14 @@ span {
   .S1 nav a {
     border-style: groove;
     border-color: #F8F4E3;
-    padding: 0.6em;
+    padding: 0.8em;
     color: #F8F4E3;
     font-family: "Bebas Neue";
     margin-top: 5vh;
     font-size: 2.5em; }
+  .S1 nav a:hover {
+    color: #087E8B;
+    border-color: #087E8B; }
   .S1__picture {
     grid-area: IMG;
     flex-basis: 50%;
@@ -544,6 +557,9 @@ span {
     border: 2px solid #F8F4E3;
     border-style: ridge;
     margin-top: 3vh; }
+  .S14 button:hover {
+    color: #087E8B;
+    border-color: #087E8B; }
 
 .S7 {
   grid-area: S1;

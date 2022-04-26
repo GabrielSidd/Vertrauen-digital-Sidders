@@ -4,20 +4,16 @@ html {
     font-size: 62.5%;
 
 }
-
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     background: $grad-bg;
-    font-family: $font-primary;
 }
-
 ul {
     list-style-type: none;
     padding-left: 0;
 }
-
 a {
     text-decoration: none;
     color: map-get($colores, terciario);

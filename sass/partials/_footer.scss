@@ -1,15 +1,25 @@
 footer {
     margin-top: 30vh;
 }
-
-svg {
-    width: 25px;
-    color: map-get($colores, terciario)
-}
-
-span {
-    flex-basis: 100%;
-    font-family: $font-primary;
-    font-size: 1em;
-    color: map-get($colores, terciario)
-}
+.sociales {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 2rem ; 
+        justify-content:space-around;
+        
+    }
+    .sociales__CR {
+        flex-basis: 50%;
+        font-family: $font-primary;
+        color: map-get($colores , terciario );
+        font-size: 1.2em;
+    }
+    .sociales__icono {
+        padding: 1rem;
+        flex-basis: 50%;
+        max-width: 100%;
+    }
+    .sociales__icono:hover {
+        color: map-get($colores , cuaternario);
+    }

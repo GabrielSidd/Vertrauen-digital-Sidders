@@ -74,4 +74,8 @@
         border-style: ridge;
         margin-top: 3vh;
     }
+    button:hover {
+        color: map-get($colores , cuaternario );
+        border-color:map-get($colores , cuaternario );
+    }
 }
